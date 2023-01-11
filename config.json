@@ -1,0 +1,16 @@
+{
+	"tcp_std": [
+		80
+	],
+	"tcp_ssl": [
+		443
+	],
+	"ssl_cert": "/etc/noobzvpns/cert.pem",
+	"ssl_key": "/etc/noobzvpns/key.pem",
+	"ssl_version": "AUTO",
+	"event_size": 1000,
+	"conn_timeout": 60,
+    "mem_pool": 15,
+	"dns_resolver": "/etc/resolv.conf",
+	"http_ok": "HTTP/1.1 101 Switching Protocols[crlf]Upgrade: websocket[crlf]Connection: Upgrade[crlf][crlf]"
+}

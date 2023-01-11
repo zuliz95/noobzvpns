@@ -1,0 +1,19 @@
+[Unit]
+Description=NoobzVpn-Server
+Wants=network-online.target
+After=network.target network-online.target
+
+[Service]
+CapabilityBoundingSet=CAP_NET_BIND_SERVICE
+AmbientCapabilities=CAP_NET_BIND_SERVICE
+ExecStart=/usr/bin/noobzvpns --start-service
+User=root
+Type=simple
+TimeoutStopSec=1
+
+[Install]
+WantedBy=multi-user.target
+
+
+
+
